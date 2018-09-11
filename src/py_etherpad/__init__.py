@@ -286,3 +286,9 @@ class EtherpadLiteClient:
         return self.call("isPasswordProtected", {
             "padID": padID
         })
+
+    def listSavedRevisions(self, padID):
+        """returns a list of saved revision of this pad"""
+        return self.call("listSavedRevisions", {
+            "padID": padID
+        })
